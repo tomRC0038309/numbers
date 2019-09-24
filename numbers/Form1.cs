@@ -29,6 +29,19 @@ namespace numbers
             richTextBox1.AppendText(i1 + "\n" + i2 + "\n" + i3 + "\n" + i4 + "\n" + i5 + "\n" + i6 + "\n");
             richTextBox1.AppendText(d1 + "\n" + d2 + "\n" + d3 + "\n");
 
+            string st = "three";
+            try
+            {
+                int it = int.Parse(st);
+            }
+            catch
+            {
+                MessageBox.Show(st + " is not an intager");
+            }
+
+            
+               
+
         }
 
         private void RichTextBox1_TextChanged(object sender, EventArgs e)
